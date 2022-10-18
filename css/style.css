@@ -9,15 +9,10 @@ body {
 .text-center {
   text-align: center;
 }
-.contenedor {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .site-header {
-  font-size: 30px;
+  font-size: 15px;
   background-color: #bcd7e8;
-  padding: 30px;
+  padding: 20px;
 }
 .nav-bar ul {
   display: flex;
@@ -27,7 +22,7 @@ body {
   list-style: none;
 }
 .nav-bar li a {
-  color: black;
+  color: rgb(251, 251, 251);
   text-decoration: none;
 }
 .nav-bar {
@@ -36,12 +31,12 @@ body {
 footer {
   background-color: #bed9ea;
 }
+.hijo {
+  margin: 10px 10px 10px 10px;
+}
 .hijo img {
   height: 400px;
-  width: 400px;
-}
-.hijo {
-  margin: 20px 0px;
+  width: 350px;
 }
 .grid-padre {
   display: grid;
@@ -53,7 +48,8 @@ footer {
   margin: 10px 0px;
   background-color: rgb(67, 64, 64);
   color: azure;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -65,7 +61,27 @@ footer .iconos img {
   height: 30px;
   width: 30px;
 }
-.iconos img:hover{
+.iconos img:hover {
   cursor: pointer;
 }
+@media (max-width: 1000px) {
+  .hijo img {
+    width: 250px;
+    height: 250px;
+  }
+  .grid-padre {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
 
+@media (max-width: 600px) {
+  .hijo img {
+    width: 250px;
+    height: 250px;
+  }
+  .grid-padre {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+}
